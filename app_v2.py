@@ -151,7 +151,7 @@ def objective(trial):
 study = optuna.create_study(direction="maximize")
 # Reduced n_trials for faster execution in this environment. Increase for better results.
 study.optimize(
-    objective, n_trials=100, show_progress_bar=True
+    objective, n_trials=5, show_progress_bar=True
 )  # Reduced trials to 5 for speed
 best_params_from_optuna = study.best_params
 
