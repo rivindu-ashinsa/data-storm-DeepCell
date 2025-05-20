@@ -1,0 +1,13 @@
+[project]
+name = "data-storm-deepcell"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "category-encoders>=2.8.1",
+    "lightgbm>=4.6.0",
+    "numpy<2",  # Changed to numpy<2 to avoid ABI incompatibility
+    "pandas>=2.2.3",
+    "scikit-learn>=1.6.1",
+]
